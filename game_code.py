@@ -1,8 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# # CSS 201.5
-# 
 # ## PS 01 - Advanced Programming for Computational Social Sciences
 # 
 # In this Problem Set, you must create a `Rock-Paper-Scissors-Lizard-Spock` game. Check it in [here](https://en.wikipedia.org/wiki/Rock_paper_scissors#Additional_weapons), for reference.
@@ -34,7 +30,7 @@
 # 
 # Have fun!
 
-# In[1]:
+
 
 
 # Some needed packs
@@ -53,8 +49,6 @@ actions = ['rock', 'paper', 'scissors', 'lizard', 'spock']
 # 
 # - Raise a `ValueError` if the user enters anything different than that.
 
-# In[27]:
-
 
 def consist(x):
     x = x.lower()
@@ -71,7 +65,6 @@ def consist(x):
 # 
 # *Hint:* Check the [documentation](https://docs.python.org/3/library/random.html) for the choice function in the random library.
 
-# In[3]:
 
 
 def opponent():
@@ -81,7 +74,6 @@ print(opponent)
 
 # **Question 3:** Implement a function called `rock`. It receives a play and returns `True` if the rock beats the play and `False` if it ties or the rock loses.
 
-# In[18]:
 
 
 def rock(play):
@@ -98,7 +90,6 @@ def rock(play):
 
 # **Question 4:** Implement a function called `scissors`. It receives a play and returns `True` if the scissors beats the play and `False` if it ties or the scissors loses.
 
-# In[23]:
 
 
 def scissors(play):
@@ -115,8 +106,6 @@ def scissors(play):
 
 # **Question 5:** Implement a function called `paper`. It receives a play and returns `True` if the paper beats the play and `False` if it ties or paper loses.
 
-# In[26]:
-
 
 def paper(play):
     paper_win = ['rock', 'spock']
@@ -126,12 +115,9 @@ def paper(play):
     else:
         return False
 
-#paper('paper')
 
 
 # **Question 6:** Implement a function called `lizard`. It receives a play and returns `True` if the lizard beats the play and `False` if it ties or lizard loses.
-
-# In[28]:
 
 
 def lizard(play):
@@ -145,7 +131,6 @@ def lizard(play):
 
 # **Question 7:** Implement a function called `spock`. It receives a play and returns `True` if the spock beats the play and `False` if it ties or spock loses.
 
-# In[29]:
 
 
 def spock(play):
@@ -159,7 +144,6 @@ def spock(play):
 
 # **Question 8:** Save the functions in a dictionary called `myplays`. The keys in the dictionary has to have the same names as these functions. Hint: It should be a one-line solution using `dict` and `zip`.
 
-# In[40]:
 
 
 myplays = dict(zip(['rock', 'paper', 'scissors', 'lizard', 'spock'], [rock, paper, scissors, lizard, spock]))
@@ -192,7 +176,6 @@ myplays = dict(zip(['rock', 'paper', 'scissors', 'lizard', 'spock'], [rock, pape
 # ('computer', 'rock', 'paper')
 # ```
 
-# In[31]:
 
 
 def gameon(myplays, you, comp):
@@ -232,7 +215,6 @@ def gameon(myplays, you, comp):
 # Oh no, you lost... Better luck next time!
 # ```
 
-# In[34]:
 
 
 hooraytext = """
@@ -255,8 +237,6 @@ def hooray(result):
 
 
 # Now, let's play the game!
-
-# In[35]:
 
 
 # A prompt function for you
@@ -323,10 +303,6 @@ Game on!
     print(myhelpstr, end = '\n\n')
 
 
-# In[1]:
-
 
 myprompt()
 
-
-# **Great work!**
